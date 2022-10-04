@@ -1,0 +1,106 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: helvitica, sans-serif;
+}
+
+body
+{
+	background-image: url(images/bck.jpg) 100%;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+.menu-bar
+{
+	background: rgb(0, 0, 100);
+	text-align: center;
+	width: 100%;
+}
+
+.menu-bar ul 
+{
+	display: inline-flex;
+	height: 80px;
+	list-style: none;
+	color: white;
+}
+
+.menu-bar ul li 
+{
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.menu-bar ul li a 
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+	background: #085895;
+	border-radius: 3px;
+}
+
+.menu-bar .fa 
+{
+	margin-right: 8px;
+}
+
+.sub-menu-1
+{
+	display: none;	
+}
+
+.menu-bar ul li:hover .sub-menu-1 
+{
+	display: block;
+	position: absolute;
+	background: rgb(0, 0, 100);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul 
+{
+	display: inline-block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li 
+{
+	width: 150px;
+	padding: #fff;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+} 
+
+.menu-bar ul li:hover .sub-menu-1 ul li: last-child
+{
+	border: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a: hover
+{
+	color:;
+} 
+
+.col img:hover
+{
+	transform: scale(1.1);
+}
+/* Media Queries */
+@media(max-width: 990px)
+{
+	.menu-bar {
+		height: 90vh;
+	}
+}
